@@ -1,3 +1,27 @@
 .label {
     display: inline;
 }
+
+
+#main {
+    display: flex;
+}
+
+.box {
+    background-color: aqua;
+    border: black ;
+    padding: 10px;
+    width: 30%;
+     
+}
+
+#main div img{
+    width: 100%;
+    display: flex;
+}
+
+
+
+@media (max-width: 600px) {
+    
+}
