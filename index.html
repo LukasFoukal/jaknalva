@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel='stylesheet' type='text/css' href='styles.css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jaknalva.cz</title>
+</head>
+<body>
+    <h1>Zvolte počáteční bod:</h1>
+    <button onclick="navigator.geolocation.getCurrentPosition(loadPosition)">Moje poloha</button>
+    <button onclick="lat = 48.7558747; long = 16.8901997; loadItUp()">GBV</button>
+    <button onclick="lat = 48.7411361; long = 16.7557525; loadItUp()">Valtice</button>
+
+    <h3>Kategorie</h3>
+    <button onclick="unfilter()">Vše</button>
+    <button onclick="filter('klasika')">Klasika</button>
+    <button onclick="filter('technik')">Technik</button>
+
+    <div id="main">            
+        <div
+        id="0"
+        data-lat=48.7595631
+        data-long=16.8808328
+        data-category="technik">
+            Kostel Břeclav (TGM) - <div class="label">0</div>m
+        </div>
+        <div
+        id="1"
+        data-lat=48.7600256
+        data-long=16.8759739
+        data-category="klasika">
+            Zámek Břeclav - <div class="label">0</div>m
+        </div>
+        <div
+        id="2"
+        data-lat=48.8046161
+        data-long=16.8323422
+        data-category="klasika">
+            Janohrad - <div class="label">0</div>m
+        </div>
+        <div
+        id="3"
+        data-lat=48.7747817
+        data-long=16.7968258
+        data-category="klasika">
+            Tři Grácie - <div class="label">0</div>m
+        </div>
+    </div>
+    <script src='js/index.js'></script>
+</body>
+</html>
