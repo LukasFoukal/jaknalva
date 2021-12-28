@@ -1,14 +1,39 @@
-var lat = 48.7558747;
-var long = 16.8901997;
+var lat;
+var long;
 
-loadItUp();
+var filterColor = "gold";
+var filterColorActive = "goldenrod";
+var locationColor = "gold";
+var locationColorActive = "goldenrod";
 
-
+navigator.geolocation.getCurrentPosition(loadPosition)
+unfilter();
 
 function loadPosition(position) {
     lat = position.coords.latitude;
     long = position.coords.longitude;
     loadItUp();
+    document.getElementById("myLocation").style.backgroundColor = locationColorActive;
+    document.getElementById("Breclav").style.backgroundColor = locationColor;
+    document.getElementById("Valtice").style.backgroundColor = locationColor;
+}
+
+function Breclav() {
+    lat = 48.7558747;
+    long = 16.8901997;
+    loadItUp()
+    document.getElementById("myLocation").style.backgroundColor = locationColor;
+    document.getElementById("Breclav").style.backgroundColor = locationColorActive;
+    document.getElementById("Valtice").style.backgroundColor = locationColor;
+}
+
+function Valtice() {
+    lat = 48.7411361;
+    long = 16.7557525;
+    loadItUp()
+    document.getElementById("myLocation").style.backgroundColor = locationColor;
+    document.getElementById("Breclav").style.backgroundColor = locationColor;
+    document.getElementById("Valtice").style.backgroundColor = locationColorActive;
 }
 
 function loadItUp() {
@@ -65,4 +90,24 @@ function unfilter() {
 
         content.style.display = "block";
     }
+
+    document.getElementById("all").style.backgroundColor = filterColorActive;
+    document.getElementById("Klasika").style.backgroundColor = filterColor;
+    document.getElementById("Technik").style.backgroundColor = filterColor;
+}
+
+function klasika() {
+    document.getElementById("all").style.backgroundColor = filterColor;
+    document.getElementById("Klasika").style.backgroundColor = filterColorActive;
+    document.getElementById("Technik").style.backgroundColor = filterColor;
+
+    filter("klasika");
+}
+
+function technik() {
+    document.getElementById("all").style.backgroundColor = filterColor;
+    document.getElementById("Klasika").style.backgroundColor = filterColor;
+    document.getElementById("Technik").style.backgroundColor = filterColorActive;
+
+    filter("technik");
 }
