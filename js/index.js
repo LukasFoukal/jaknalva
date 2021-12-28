@@ -49,7 +49,7 @@ function filter(category) {
     for (let k = 0; k < elements; k++) {
         var content = document.getElementById(k);
 
-        if (content.dataset.category == category) {
+        if (content.dataset.category.includes(category)) {
             content.style.display = "block";
         } else {
             content.style.display = "none";
