@@ -3,25 +3,48 @@
 }
 
 
+
 #main {
-    display: flex;
+    display: inline;
+    gap: 10px;
 }
+
 
 .box {
     background-color: aqua;
     border: black ;
-    padding: 10px;
-    width: 30%;
-     
+    width: 100%;
+    margin: 0px;
+    border-color: black;
+    border-width: 3px;
 }
 
 #main div img{
-    width: 100%;
+    width: 90%;
     display: flex;
 }
 
 
+/* pro tablet */
+@media (min-width: 600px) {
+    #main {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 32%;
 
-@media (max-width: 600px) {
-    
+    }
+}
+
+/* pro počítač */ 
+@media (min-width: 750px) {
+    #main {
+        display: flex;
+    }
+    .box {
+        width: 24%;
+
+    }
 }
