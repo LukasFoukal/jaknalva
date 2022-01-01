@@ -12,16 +12,18 @@
     <table>
         <tr>
             <td><button class="locationButton" onclick="navigator.geolocation.getCurrentPosition(loadPosition)" id="myLocation">Moje poloha</button></td>
-            <td><button class="locationButton" onclick="Breclav()" id="Breclav">Břeclav</button></td>
-            <td><button class="locationButton" onclick="Valtice()" id="Valtice">Valtice</button></td>
+            <!-- to add more starting locations, just copy, change the coordinates here and set an appropriate id, nothing to change in js -->
+            <td><button class="locationButton" onclick="lat = 48.7558747; long = 16.8901997; loadItUp(); locationButtonActive(this.id)" id="Breclav">Břeclav</button></td>
+            <td><button class="locationButton" onclick="lat = 48.7411361; long = 16.7557525; loadItUp(); locationButtonActive(this.id)" id="Valtice">Valtice</button></td>
         </tr>
     </table>   
 
     <table>
         <tr>
             <td><button class="filterButton" onclick="unfilter()" id="all">Vše</button></td>
-            <td><button class="filterButton" onclick="klasika()" id="Klasika">Klasika</button></td>
-            <td><button class="filterButton" onclick="technik()" id="Technik">Technik</button></td>
+            <!-- to add more filters, just copy, change the id of the filterButton and add that id to the data-category property of desired items -->
+            <td><button class="filterButton" onclick="filter(this.id)" id="klasika">Klasika</button></td>
+            <td><button class="filterButton" onclick="filter(this.id)" id="technik">Technik</button></td>
         </tr>
     </table>
 
