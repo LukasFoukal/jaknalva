@@ -1,5 +1,5 @@
 .label {
-    display: inline;
+    display: inline-block;
 }
 
 h1 {
@@ -11,6 +11,12 @@ h1 {
     padding: -webkit-sticky;
     margin: 0px;
     top: 0;
+}
+
+h3 {
+    display: inline-block;
+    padding: 0.25em;
+    margin: 0em;
 }
 
 body {
