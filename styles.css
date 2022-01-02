@@ -3,13 +3,18 @@
 }
 
 h1 {
+    width: 100%;
+    margin: 0px;
+    padding-left: 1%;
+}
+
+#banner {
     display: block;
     background-color: #222222;
     color: white;
     padding: 0.25em;
     position: sticky;
     padding: -webkit-sticky;
-    margin: 0px;
     top: 0;
 }
 
@@ -17,6 +22,7 @@ h3 {
     display: inline-block;
     padding: 0.25em;
     margin: 0em;
+    font-size: 1.5em;
 }
 
 body {
@@ -51,8 +57,13 @@ button {
 }
 
 #main div img{
-    width: 90%;
+    width: 100%;
     display: flex;
+}
+
+.oneliner {
+    padding: 0.5em;
+    padding-top: 0em;
 }
 
 
@@ -64,18 +75,28 @@ button {
         flex-wrap: wrap;
     }
     .box {
-        width: 32%;
+        width: 49%;
 
     }
 }
 
 /* pro počítač */ 
-@media (min-width: 750px) {
+@media (min-width: 1000px) {
     #main {
         display: flex;
     }
     .box {
-        width: 24%;
+        width: 32%;
 
+    }
+
+    #page {
+        width: 1000px;
+        margin: auto;
+    }
+
+    h1 {
+        width: 1000px;
+        margin: auto;
     }
 }
