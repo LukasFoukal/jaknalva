@@ -8,44 +8,64 @@
     <title>jaknalva.cz</title>
 </head>
 <body>
-    <h1>Zvolte počáteční bod:</h1>
-    <button onclick="navigator.geolocation.getCurrentPosition(loadPosition)">Moje poloha</button>
-    <button onclick="lat = 48.7558747; long = 16.8901997; loadItUp()">GBV</button>
-    <button onclick="lat = 48.7411361; long = 16.7557525; loadItUp()">Valtice</button>
+    <h1>jaknalva.cz</h1>
+    <table>
+        <tr>
+            <td><button class="locationButton" onclick="navigator.geolocation.getCurrentPosition(loadPosition)" id="myLocation">Moje poloha</button></td>
+            <!-- to add more starting locations, just copy, change the coordinates here and set an appropriate id, nothing to change in js -->
+            <td><button class="locationButton" onclick="lat = 48.7558747; long = 16.8901997; loadItUp(); locationButtonActive(this.id)" id="Breclav">Břeclav</button></td>
+            <td><button class="locationButton" onclick="lat = 48.7411361; long = 16.7557525; loadItUp(); locationButtonActive(this.id)" id="Valtice">Valtice</button></td>
+        </tr>
+    </table>   
 
-    <h3>Kategorie</h3>
-    <button onclick="unfilter()">Vše</button>
-    <button onclick="filter('klasika')">Klasika</button>
-    <button onclick="filter('technik')">Technik</button>
+    <table>
+        <tr>
+            <td><button class="filterButton" onclick="unfilter()" id="all">Vše</button></td>
+            <!-- to add more filters, just copy, change the id of the filterButton and add that id to the data-category property of desired items -->
+            <td><button class="filterButton" onclick="filter(this.id)" id="klasika">Klasika</button></td>
+            <td><button class="filterButton" onclick="filter(this.id)" id="technik">Technik</button></td>
+        </tr>
+    </table>
 
     <div id="main">            
         <div
         id="0"
+        class="box"
         data-lat=48.7595631
         data-long=16.8808328
         data-category="technik">
-            Kostel Břeclav (TGM) - <div class="label">0</div>m
+            <img src="img/lednice.jpg" alt="lednice">
+            <h3>Kostel Břeclav</h3><div class="label">0</div>m
         </div>
         <div
         id="1"
+        class="box"
         data-lat=48.7600256
         data-long=16.8759739
-        data-category="klasika">
-            Zámek Břeclav - <div class="label">0</div>m
+        data-category="klasika"
+        style="background-color: brown;">
+            <img src="img/lednice.jpg" alt="lednice">
+            <h3>Zámek Břeclav</h3><div class="label">0</div>m
         </div>
         <div
         id="2"
+        class="box"
         data-lat=48.8046161
         data-long=16.8323422
-        data-category="klasika, technik">
-            Janohrad - <div class="label">0</div>m
+        data-category="klasika, technik"
+        style="background-color:coral;">
+            <img src="img/lednice.jpg" alt="lednice">
+            <h3>Janohrad</h3><div class="label">0</div>m
         </div>
         <div
         id="3"
+        class="box"
         data-lat=48.7747817
         data-long=16.7968258
-        data-category="klasika">
-            Tři Grácie - <div class="label">0</div>m
+        data-category="klasika"
+        style="background-color:darkgreen;">
+            <img src="img/lednice.jpg" alt="lednice">
+            <h3>Tři Grácie</h3><div class="label">0</div>m
         </div>
     </div>
     <script src='js/index.js'></script>
