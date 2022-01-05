@@ -106,3 +106,13 @@ function filterButtonActive(category) {
         }
     }   
 }
+
+function toggle(boxId) {
+    if (document.getElementById(boxId).getElementsByClassName("description").item(0).style.display == "none") {
+        document.getElementById(boxId).getElementsByClassName("description").item(0).style.display = "block";
+        document.getElementById(boxId).getElementsByClassName("arrow").item(0).style.transform = "rotate(-135deg)";
+    } else {
+        document.getElementById(boxId).getElementsByClassName("description").item(0).style.display = "none";
+        document.getElementById(boxId).getElementsByClassName("arrow").item(0).style.transform = "rotate(45deg)";
+    }
+}

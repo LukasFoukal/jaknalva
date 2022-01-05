@@ -8,6 +8,10 @@ h1 {
     padding-left: 1%;
 }
 
+a {
+    text-decoration: none;
+}
+
 #banner {
     display: block;
     background-color: #222222;
@@ -30,7 +34,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-button {
+.arrow {
+    border: solid grey;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    align-self: center;
+    margin: 0.5em;
+  }  
+
+.locationButton {
     background-color: gold;
     border: none;
     display: inline-block;
@@ -41,6 +56,28 @@ button {
     color: black;
 }
 
+.filterButton {
+    background-color: gold;
+    border: none;
+    display: inline-block;
+    font-size: 1em;
+    padding: auto;
+    margin: auto;
+    border-radius: 0.1em;
+    color: black;
+}
+
+.mapButton {
+    background-color: #55aa32;
+    border: none;
+    display: inline-block;
+    font-size: 1em;
+    padding: auto;
+    margin: auto;
+    border-radius: 0.5em;
+    color: white;
+}
+
 #main {
     display: inline;
     gap: 10px;
@@ -48,7 +85,7 @@ button {
 
 
 .box {
-    background-color: aqua;
+    background-color: lightgrey;
     border: black ;
     width: 100%;
     margin: 0px;
@@ -63,6 +100,11 @@ button {
 }
 
 .oneliner {
+    padding: 0.5em;
+    padding-top: 0em;
+}
+
+.description {
     padding: 0.5em;
     padding-top: 0em;
 }
