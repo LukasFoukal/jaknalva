@@ -28,10 +28,13 @@
         </table>   
 
         <div id="filterTable">
-            <button class="filterButton" onclick="unfilter()" id="all">Vše</button>
+            <button class="filterButton" onclick="unfilter()" id="all">&#128506; Vše</button>
             <!-- to add more filters, just copy, change the id of the filterButton and add that id to the data-category property of desired items -->
-            <button class="filterButton" onclick="filter(this.id)" id="klasika">Klasika</button>
-            <button class="filterButton" onclick="filter(this.id)" id="technik">Technik</button>
+            <button class="filterButton" onclick="filter(this.id)" id="klasika">&#127984; Klasika</button>
+            <button class="filterButton" onclick="filter(this.id)" id="technik">&#127981; Technik</button>
+            <button class="filterButton" onclick="filter(this.id)" id="urban">&#127969; Urban</button>
+            <button class="filterButton" onclick="filter(this.id)" id="koupani">&#127754; Koupání</button>
+            <button class="filterButton" onclick="filter(this.id)" id="zeleznice">&#128642; Železnice</button>
         </div>
 
         <div id="main">            
@@ -41,7 +44,7 @@
             onclick="toggle(this.id)"
             data-lat=48.7595631
             data-long=16.8808328
-            data-category="technik">
+            data-category="technik, urban">
                 <img src="img/lednice.jpg" alt="lednice">
                 <h3>Kostel Břeclav</h3><div class="label">0</div>m
                 <a href="https://en.mapy.cz/s/lumukukuro" target="_blank">&#129517;</a>
@@ -83,7 +86,7 @@
             onclick="toggle(this.id)"
             data-lat=48.7747817
             data-long=16.7968258
-            data-category="klasika">
+            data-category="klasika, zeleznice">
                 <img src="img/zamek.jpg" alt="lednice">
                 <h3>Tři Grácie</h3><div class="label">0</div>m
                 <a href="https://mapy.cz/s/cedavocezu" target="_blank">&#129517;</a>

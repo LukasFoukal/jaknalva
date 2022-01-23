@@ -66,17 +66,18 @@ body {
     margin-bottom: 2em;
     flex-wrap: wrap;
     width: 80%;
+    gap: 0.5em;
 }
 
 .filterButton {
     font-size: 2em;
     padding: auto;
     color: grey;
-    border: 1px solid grey;
+    border: 0px solid grey;
     display: flex;
     align-self: flex-start;
-    width: 25%;
-    border-radius: 0em;
+    width: 100%;
+    border-radius: 0.5em;
     background-color: white;
     justify-content: left;
 }
@@ -135,6 +136,10 @@ body {
         width: 49%;
 
     }
+
+    .filterButton {
+        width: 49%;
+    }
 }
 
 /* pro počítač */ 
@@ -160,5 +165,9 @@ body {
     h1 {
         width: 1000px;
         margin: auto;
+    }
+
+    .filterButton {
+        width: 24%;
     }
 }
