@@ -2,8 +2,8 @@ var lat;
 var long;
 
 // design variables that need to be changed here
-var filterColor = "gold";
-var filterColorActive = "goldenrod";
+var filterColor = "white";
+var filterColorActive = "lightgrey";
 var locationColor = "gold";
 var locationColorActive = "goldenrod";
 

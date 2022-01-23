@@ -27,14 +27,12 @@
             </tr>
         </table>   
 
-        <table>
-            <tr>
-                <td><button class="filterButton" onclick="unfilter()" id="all">Vše</button></td>
-                <!-- to add more filters, just copy, change the id of the filterButton and add that id to the data-category property of desired items -->
-                <td><button class="filterButton" onclick="filter(this.id)" id="klasika">Klasika</button></td>
-                <td><button class="filterButton" onclick="filter(this.id)" id="technik">Technik</button></td>
-            </tr>
-        </table>
+        <div id="filterTable">
+            <button class="filterButton" onclick="unfilter()" id="all">Vše</button>
+            <!-- to add more filters, just copy, change the id of the filterButton and add that id to the data-category property of desired items -->
+            <button class="filterButton" onclick="filter(this.id)" id="klasika">Klasika</button>
+            <button class="filterButton" onclick="filter(this.id)" id="technik">Technik</button>
+        </div>
 
         <div id="main">            
             <div

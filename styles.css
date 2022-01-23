@@ -57,15 +57,28 @@ body {
     color: black;
 }
 
-.filterButton {
-    background-color: gold;
-    border: none;
-    display: inline-block;
-    font-size: 1em;
-    padding: auto;
+#filterTable {
+    display: flex;
+    justify-content: flex-start;
+    justify-self: center;
     margin: auto;
-    border-radius: 0.1em;
-    color: black;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.filterButton {
+    font-size: 2em;
+    padding: auto;
+    color: grey;
+    border: 1px solid grey;
+    display: flex;
+    align-self: flex-start;
+    width: 25%;
+    border-radius: 0em;
+    background-color: white;
+    justify-content: left;
 }
 
 .mapButton {
@@ -128,7 +141,7 @@ body {
 @media (min-width: 1000px) {
     #main {
         display: flex;
-        justify-content: space-around;  
+        justify-content: flex-start;  
     }    
     .box {
         width: 30%;
