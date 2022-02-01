@@ -4,8 +4,8 @@ var long;
 // design variables that need to be changed here
 var filterColor = "white";
 var filterColorActive = "lightgrey";
-var locationColor = "gold";
-var locationColorActive = "goldenrod";
+var locationColor = "white";
+var locationColorActive = "lightgrey";
 
 // default setting that runs on load (currently loads GPS position) and removes all filters (not sure if necessary)
 navigator.geolocation.getCurrentPosition(loadPosition)

@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unna&display=swap" rel="stylesheet">
+    <!--
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unna&display=swap" rel="stylesheet">
+    -->
 
     <title>jaknalva.cz</title>
 </head>
@@ -18,14 +20,12 @@
         <h1>jaknalva.cz</h1>
     </div>
     <div id="page">
-        <table>
-            <tr>
-                <td><button class="locationButton" onclick="navigator.geolocation.getCurrentPosition(loadPosition)" id="myLocation">Moje poloha</button></td>
-                <!-- to add more starting locations, just copy, change the coordinates here and set an appropriate id, nothing to change in js -->
-                <td><button class="locationButton" onclick="lat = 48.7558747; long = 16.8901997; loadItUp(); locationButtonActive(this.id)" id="Breclav">Břeclav</button></td>
-                <td><button class="locationButton" onclick="lat = 48.7411361; long = 16.7557525; loadItUp(); locationButtonActive(this.id)" id="Valtice">Valtice</button></td>
-            </tr>
-        </table>   
+        <div id="locationTable">
+            <button class="locationButton" onclick="navigator.geolocation.getCurrentPosition(loadPosition)" id="myLocation">&#128205; Vlastní</button>
+            <!-- to add more starting locations, just copy, change the coordinates here and set an appropriate id, nothing to change in js -->
+            <button class="locationButton" onclick="lat = 48.7558747; long = 16.8901997; loadItUp(); locationButtonActive(this.id)" id="Breclav">&#128649; Břeclav</button>
+            <button class="locationButton" onclick="lat = 48.7411361; long = 16.7557525; loadItUp(); locationButtonActive(this.id)" id="Valtice">&#127863; Valtice</button>
+        </div>
 
         <div id="filterTable">
             <button class="filterButton" onclick="unfilter()" id="all">&#128506; Vše</button>
