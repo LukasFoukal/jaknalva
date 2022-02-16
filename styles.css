@@ -14,7 +14,7 @@ a {
 
 #banner {
     display: block;
-    background-color: #222222;
+    background-color: #222;
     color: white;
     padding: 0.25em;
     position: sticky;
@@ -33,11 +33,12 @@ h3 {
 body {
     margin: 0px;
     font-family: Helvetica, Sans-Serif;
-    background-color: white;
+    background-color: #333;
+    color: white;
 }
 
 .arrow {
-    border: solid grey;
+    border: solid white;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
@@ -61,14 +62,14 @@ body {
 
 .locationButton {
     font-size: 2em;
-    padding: auto;
-    color: grey;
-    border: 1px solid grey;
+    padding: 0.1em;
+    color: white;
+    border: 0px solid grey;
     display: flex;
     align-self: flex-start;
     width: 100%;
-    border-radius: 0.25em;
-    background-color: white;
+    border-radius: 0em;
+    background-color: #222;
     justify-content: left;
 }
 
@@ -87,13 +88,13 @@ body {
 .filterButton {
     font-size: 2em;
     padding: auto;
-    color: grey;
-    border: 1px solid grey;
+    color: white;
+    border: 0px solid grey;
     display: flex;
     align-self: flex-start;
     width: 100%;
-    border-radius: 0.25em;
-    background-color: white;
+    border-radius: 0em;
+    background-color: #222;
     justify-content: left;
 }
 
@@ -115,8 +116,8 @@ body {
 
 
 .box {
-    background-color: white;
-    border: 1px solid lightgrey ;
+    background-color: #222;
+    border: 0px solid darkgray;
     width: 100%;
     margin: 0px;
     align-self: flex-start;

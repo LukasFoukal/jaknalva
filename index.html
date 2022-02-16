@@ -21,7 +21,10 @@
     </div>
     <div id="page">
         <div id="locationTable">
-            <button class="locationButton" onclick="navigator.geolocation.getCurrentPosition(loadPosition)" id="myLocation">&#128205; Vlastní</button>
+            <button class="locationButton" onclick="navigator.geolocation.getCurrentPosition(loadPosition)" id="myLocation">
+                &#128205; 
+                Vlastní
+            </button>
             <!-- to add more starting locations, just copy, change the coordinates here and set an appropriate id, nothing to change in js -->
             <button class="locationButton" onclick="lat = 48.7558747; long = 16.8901997; loadItUp(); locationButtonActive(this.id)" id="Breclav">&#128649; Břeclav</button>
             <button class="locationButton" onclick="lat = 48.7411361; long = 16.7557525; loadItUp(); locationButtonActive(this.id)" id="Valtice">&#127863; Valtice</button>
