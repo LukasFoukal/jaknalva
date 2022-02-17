@@ -1,10 +1,14 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 .label {
     display: inline-block;
 }
 
 h1 {
-    width: 100%;
-    margin: 0px;
+    width: 90%;
     padding-left: 10%;
 }
 
@@ -26,12 +30,10 @@ a {
 h3 {
     display: inline-block;
     padding: 0.25em;
-    margin: 0em;
     font-size: 1.5em;
 }
 
 body {
-    margin: 0px;
     font-family: Helvetica, Sans-Serif;
     background-color: #333;
     color: white;
@@ -112,6 +114,8 @@ body {
 #main {
     display: inline;
     gap: 10px;
+    width: 100%;
+    margin: auto;
 }
 
 
@@ -119,7 +123,6 @@ body {
     background-color: #222;
     border: 0px solid darkgray;
     width: 100%;
-    margin: 0px;
     align-self: flex-start;
 }
 
