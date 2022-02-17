@@ -2,17 +2,16 @@ var lat;
 var long;
 
 // design variables that need to be changed here
-var filterColor = "gold";
-var filterColorActive = "goldenrod";
-var locationColor = "gold";
-var locationColorActive = "goldenrod";
+var filterColor = "#222";
+var filterColorActive = "green";
+var locationColor = "#222";
+var locationColorActive = "green";
 
 // default setting that runs on load (currently loads GPS position) and removes all filters (not sure if necessary)
 navigator.geolocation.getCurrentPosition(loadPosition)
 unfilter();
 
 // functions for changing location
-
 function loadPosition(position) {
     lat = position.coords.latitude;
     long = position.coords.longitude;
@@ -21,6 +20,7 @@ function loadPosition(position) {
     locationButtonActive("myLocation");
 }
 
+// function for sorting the list
 function loadItUp() {
     var elements = document.getElementById("main").childElementCount;
 
@@ -53,6 +53,7 @@ function loadItUp() {
     }
 }
 
+// function for making the active location button darker
 function locationButtonActive(location) {
     var locationButtons = document.getElementsByClassName("locationButton");
 
@@ -66,7 +67,6 @@ function locationButtonActive(location) {
 }
 
 // fuctions for filtering
-
 function filter(category) {
     var elements = document.getElementById("main").childElementCount;
 
@@ -95,6 +95,7 @@ function unfilter() {
     filterButtonActive("all");
 }
 
+// function for making the active filtrer button darker
 function filterButtonActive(category) {
     var filterButtons = document.getElementsByClassName("filterButton");
 
@@ -107,6 +108,7 @@ function filterButtonActive(category) {
     }   
 }
 
+// function for expanding and contracting the descriptions
 function toggle(boxId) {
     if (document.getElementById(boxId).getElementsByClassName("description").item(0).style.display == "none") {
         document.getElementById(boxId).getElementsByClassName("description").item(0).style.display = "block";

@@ -1,11 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 .label {
     display: inline-block;
 }
 
 h1 {
-    width: 100%;
-    margin: 0px;
-    padding-left: 1%;
+    width: 90%;
+    padding-left: 10%;
 }
 
 a {
@@ -14,29 +18,29 @@ a {
 
 #banner {
     display: block;
-    background-color: #222222;
+    background-color: #222;
     color: white;
     padding: 0.25em;
     position: sticky;
     padding: -webkit-sticky;
     top: 0;
+    width: 100%;
 }
 
 h3 {
     display: inline-block;
     padding: 0.25em;
-    margin: 0em;
     font-size: 1.5em;
 }
 
 body {
-    margin: 0px;
-    font-family: 'Unna';
-    background-color:    #fcfca6;
+    font-family: Helvetica, Sans-Serif;
+    background-color: #333;
+    color: white;
 }
 
 .arrow {
-    border: solid grey;
+    border: solid white;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
@@ -46,26 +50,54 @@ body {
     margin: 0.5em;
   }  
 
-.locationButton {
-    background-color: gold;
-    border: none;
-    display: inline-block;
-    font-size: 1em;
-    padding: auto;
+#locationTable {
+    display: flex;
+    justify-content: flex-start;
+    justify-self: center;
     margin: auto;
-    border-radius: 0.1em;
-    color: black;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 0.5em;
+}
+
+.locationButton {
+    font-size: 2em;
+    padding: 0.1em;
+    color: white;
+    border: 0px solid grey;
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    border-radius: 0em;
+    background-color: #222;
+    justify-content: left;
+}
+
+#filterTable {
+    display: flex;
+    justify-content: flex-start;
+    justify-self: center;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 0.5em;
 }
 
 .filterButton {
-    background-color: gold;
-    border: none;
-    display: inline-block;
-    font-size: 1em;
+    font-size: 2em;
     padding: auto;
-    margin: auto;
-    border-radius: 0.1em;
-    color: black;
+    color: white;
+    border: 0px solid grey;
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    border-radius: 0em;
+    background-color: #222;
+    justify-content: left;
 }
 
 .mapButton {
@@ -82,16 +114,15 @@ body {
 #main {
     display: inline;
     gap: 10px;
+    width: 100%;
+    margin: auto;
 }
 
 
 .box {
-    background-color: #ffff7b;
-    border: black ;
+    background-color: #222;
+    border: 0px solid darkgray;
     width: 100%;
-    margin: 0px;
-    border-color: black;
-    border-width: 3px;
     align-self: flex-start;
 }
 
@@ -122,21 +153,25 @@ body {
         width: 49%;
 
     }
+
+    .filterButton {
+        width: 49%;
+    }
+
+    .locationButton {
+        width: 49%;
+    }
 }
 
 /* pro počítač */ 
 @media (min-width: 1000px) {
     #main {
         display: flex;
-        justify-content: space-around;  
+        justify-content: flex-start;  
     }    
     .box {
-        width: 30%;
+        width: 32%;
 
-    }
-
-    .box:hover {
-        width: 31%;
     }
 
     #page {
@@ -147,5 +182,14 @@ body {
     h1 {
         width: 1000px;
         margin: auto;
+        padding-left: 0%;
+    }
+
+    .filterButton {
+        width: 24%;
+    }
+
+    .locationButton {
+        width: 24%;
     }
 }
