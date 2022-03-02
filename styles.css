@@ -139,6 +139,13 @@ body {
     padding-top: 0em;
 }
 
+#footer {
+    color: gray;
+    margin: auto;
+    padding: 1em;
+    text-align: center;
+}
+
 
 /* pro tablet */
 @media (min-width: 600px) {
