@@ -20,31 +20,38 @@
         <h1>jaknalva.cz</h1>
     </div>
     <div id="page">
-        <div id="locationTable">
-            <button class="locationButton" onclick="navigator.geolocation.getCurrentPosition(loadPosition)" id="myLocation">
-                &#128205; 
-                Vlastní
-            </button>
-            <!-- to add more starting locations, just copy, change the coordinates here and set an appropriate id, nothing to change in js -->
-            <button class="locationButton" onclick="lat = 48.7558747; long = 16.8901997; loadItUp(); locationButtonActive(this.id)" id="Breclav">&#128649; Břeclav</button>
-            <button class="locationButton" onclick="lat = 48.7411361; long = 16.7557525; loadItUp(); locationButtonActive(this.id)" id="Valtice">&#127863; Valtice</button>
-        </div>
-
-        <div id="filterTable">
-            <button class="filterButton" onclick="unfilter()" id="all">&#128506; Vše</button>
-            <!-- to add more filters, just copy, change the id of the filterButton and add that id to the data-category property of desired items -->
-            <button class="filterButton" onclick="filter(this.id)" id="klasika">&#127984; Klasika</button>
-            <button class="filterButton" onclick="filter(this.id)" id="technik">&#127981; Technik</button>
-            <button class="filterButton" onclick="filter(this.id)" id="urban">&#127969; Urban</button>
-            <button class="filterButton" onclick="filter(this.id)" id="koupani">&#127754; Koupání</button>
-            <button class="filterButton" onclick="filter(this.id)" id="zeleznice">&#128642; Železnice</button>
+        <div id="sentence">
+            <span class="avoidwrap">
+                Zobrazujeme 
+                <!-- the id of the filter button is the keyword that needs to be in data-category of the box -->
+                <div class="dropdown" id="dropdownFilter">
+                    <button class="dropbtn" id="filterLabel">všechno</button>
+                    <div class="dropdown-content" id="contentFilter">
+                    <a href="#" onclick="unfilter(); filterChange(this)">všechno</a>
+                    <a href="#" onclick="filter(this.id); filterChange(this)" id="klasika">klasické místa</a>
+                    <a href="#" onclick="filter(this.id); filterChange(this)" id="zeleznice">železniční zajímavosti</a>
+                    </div>
+                </div>
+            </span>
+            <span class="avoidwrap">
+                řazené z 
+                <!-- even more straight forward, just change the coordinates and inner HTML -->
+                <div class="dropdown" id="dropdownLocation">
+                    <button class="dropbtn" id="locationLabel">Vaší polohy</button>
+                    <div class="dropdown-content" id="contentLocation">
+                    <a href="#" onclick="navigator.geolocation.getCurrentPosition(loadPosition); locationChange(this)">Vaší polohy</a>
+                    <a href="#" onclick="lat = 48.7558747; long = 16.8901997; loadItUp(); locationChange(this)">Břeclavi</a>
+                    <a href="#" onclick="lat = 48.7411361; long = 16.7557525; loadItUp(); locationChange(this)">Valtic</a>
+                    </div>
+                </div>
+            </span>
         </div>
 
         <div id="main">            
             <div
             id="0"
             class="box"
-            onclick="toggle(this.id)"
+            onclick="toggle(this)"
             data-lat=48.7600258
             data-long=16.8759736
             data-category="klasika">
@@ -58,7 +65,7 @@
             <div
             id="1"
             class="box"
-            onclick="toggle(this.id)"
+            onclick="toggle(this)"
             data-lat=48.7587239
             data-long=16.8820247
             data-category="klasika">
@@ -72,7 +79,7 @@
             <div
             id="2"
             class="box"
-            onclick="toggle(this.id)"
+            onclick="toggle(this)"
             data-lat=48.7519194
             data-long=16.8656903
             data-category="klasika">
@@ -86,7 +93,7 @@
             <div
             id="3"
             class="box"
-            onclick="toggle(this.id)"
+            onclick="toggle(this)"
             data-lat=48.7536203
             data-long=16.8930283
             data-category="zeleznice">
@@ -100,7 +107,7 @@
             <div
             id="4"
             class="box"
-            onclick="toggle(this.id)"
+            onclick="toggle(this)"
             data-lat=48.8046161
             data-long=16.8323422
             data-category="klasika">
@@ -114,7 +121,7 @@
             <div
             id="5"
             class="box"
-            onclick="toggle(this.id)"
+            onclick="toggle(this)"
             data-lat=48.8006236
             data-long=16.8304697
             data-category="klasika">
@@ -128,7 +135,7 @@
             <div
             id="6"
             class="box"
-            onclick="toggle(this.id)"
+            onclick="toggle(this)"
             data-lat=48.7829300
             data-long=16.8244903
             data-category="klasika">
