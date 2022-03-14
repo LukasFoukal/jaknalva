@@ -5,13 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Font -->
-    <!--
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Unna&display=swap" rel="stylesheet">
-    -->
 
     <title>jaknalva.cz</title>
 </head>
@@ -28,8 +21,8 @@
                     <button class="dropbtn" id="filterLabel">všechno</button>
                     <div class="dropdown-content" id="contentFilter">
                     <a href="#" onclick="unfilter(); filterChange(this)">všechno</a>
-                    <a href="#" onclick="filter(this.id); filterChange(this)" id="klasika">klasické místa</a>
-                    <a href="#" onclick="filter(this.id); filterChange(this)" id="zeleznice">železniční zajímavosti</a>
+                    <a href="#" onclick="filter(this.id); filterChange(this)" id="LVA">místa LVA</a>
+                    <a href="#" onclick="filter(this.id); filterChange(this)" id="architektura">architektonické zajímavosti</a>
                     </div>
                 </div>
             </span>
@@ -54,7 +47,7 @@
             onclick="toggle(this)"
             data-lat=48.7600258
             data-long=16.8759736
-            data-category="Klasik">
+            data-category="klasika">
                 <img src="img/Zamek_Breclav_Marcin_Szala_CC_BY_SA_4.jpg" title="Marcin Szala CC BY SA 4.0">
                 <h3>Zámek Břeclav</h3><div class="label">0</div>m
                 <a href="https://mapy.cz/s/calasegaru" target="_blank">&#129517;</a>
@@ -62,7 +55,6 @@
                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
                 <center><i class="arrow"></i></center>
             </div>
-            
             <div
             id="1"
             class="box"
@@ -77,7 +69,6 @@
                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
                 <center><i class="arrow"></i></center>
             </div>
-            
             <div
             id="2"
             class="box"
@@ -92,13 +83,13 @@
                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
                 <center><i class="arrow"></i></center>
             </div>
-            
-            <!-- LVA --> 
-            
+
+             <!-- LVA --> 
+
             <div
             id="3"
             class="box"
-            onclick="toggle(this.id)"
+            onclick="toggle(this)"
             data-lat=48.8046161
             data-long=16.8323422
             data-category="LVA">
@@ -109,7 +100,6 @@
                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
                 <center><i class="arrow"></i></center>
             </div>
-            
             <div
             id="4"
             class="box"
@@ -124,7 +114,6 @@
                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
                 <center><i class="arrow"></i></center>
             </div>
-            
             <div
             id="5"
             class="box"
@@ -139,246 +128,233 @@
                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
                 <center><i class="arrow"></i></center>
             </div>
-            
             <div
-            id="6"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.7279658
-            data-long=16.8947942
-            data-category="LVA">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Zámeček Pohansko</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/jumefofubo" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
+             id="6"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.7279658
+             data-long=16.8947942
+             data-category="LVA">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Zámeček Pohansko</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/jumefofubo" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
+             <div
+             id="7"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.7124139
+             data-long=16.9183958
+             data-category="LVA">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Zámeček Lány</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/hodogebaga" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
+             <div
+             id="8"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.7804297
+             data-long=16.7578819
+             data-category="LVA">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Hraniční zámeček</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/lukanajene" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
+             <div
+             id="9"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.7178167
+             data-long=16.7809408
+             data-category="LVA">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Katzelsdorský zámeček</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/josolapaza" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
+             <div
+             id="10"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.7519306
+             data-long=16.7615533
+             data-category="LVA">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Belveder</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/pusugorole" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
+             <div
+             id="11"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.8016903
+             data-long=16.8054806
+             data-category="LVA">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Zámek Lednice</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/povudojupo" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
+             <div
+             id="12"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.7392069
+             data-long=16.7552669
+             data-category="LVA">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Zámek Valtice</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/cenosuvuna" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
+             <div
+             id="13"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.7747817
+             data-long=16.7968258
+             data-category="LVA">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Chrám Tří grácií</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/guvurekana" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
+             <div
+             id="14"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.7370358
+             data-long=16.8244903
+             data-category="LVA">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Kolonáda na Reistně</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/lohesonazu" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
 
-            <div
-            id="7"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.7124139
-            data-long=16.9183958
-            data-category="LVA">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Zámeček Lány</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/hodogebaga" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
+             <!-- ARCHITEKTURA -->
 
-            <div
-            id="8"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.7804297
-            data-long=16.7578819
-            data-category="LVA">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Hraniční zámeček</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/lukanajene" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-
-            <div
-            id="9"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.7178167
-            data-long=16.7809408
-            data-category="LVA">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Katzelsdorský zámeček</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/josolapaza" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-
-            <div
-            id="10"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.7519306
-            data-long=16.7615533
-            data-category="LVA">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Belveder</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/pusugorole" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-
-            <div
-            id="11"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.8016903
-            data-long=16.8054806
-            data-category="LVA">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Zámek Lednice</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/povudojupo" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-
-            <div
-            id="12"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.7392069
-            data-long=16.7552669
-            data-category="LVA">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Zámek Valtice</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/cenosuvuna" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-
-            <div
-            id="13"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.7747817
-            data-long=16.7968258
-            data-category="LVA">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Chrám Tří grácií</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/guvurekana" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-
-            <div
-            id="14"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.7370358
-            data-long=16.8244903
-            data-category="LVA">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Kolonáda na Reistně</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/lohesonazu" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-            
-            <!-- ARCHITEKTURA -->
-
-            <div
-            id="19"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.7370372
+             <div
+             id="15"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.7370372
             data-long=16.8773472
-            data-category="architektura">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Most Oscar</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/bevocamale" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-
-            <div
-            id="21"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.7592358
-            data-long=16.8878125
-            data-category="architektura">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Vodárenská věž</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/gemoketahu" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-            
-            <div
-            id="22"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.7829300
-            data-long=16.8244903
-            data-category="architektura">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Most Oscar</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/kazenupesu" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-            <div
-            id="23"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.7829300
-            data-long=16.8244903
-            data-category="architektura">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Most Oscar</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/kazenupesu" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-            <div
-            id="24"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.7829300
-            data-long=16.8244903
-            data-category="architektura">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Most Oscar</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/kazenupesu" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-            <div
-            id="25"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.7829300
-            data-long=16.8244903
-            data-category="architektura">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Most Oscar</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/kazenupesu" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-
-            <div
-            id="26"
-            class="box"
-            onclick="toggle(this.id)"
-            data-lat=48.7829300
-            data-long=16.8244903
-            data-category="architektura">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Most Oscar</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/kazenupesu" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-
+             data-category="architektura">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Most Oscar</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/kazenupesu" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
+             <div
+             id="16"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.7592358
+             data-long=16.8878125
+             data-category="architektura">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Vodárenská věž</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/gemoketahu" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
+             <div
+             id="17"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.7370372
+             data-long=16.8773472
+             data-category="architektura">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Most Oscar</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/bevocamale" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
+             <div
+             id="18"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.7370372
+            data-long=16.8773472
+             data-category="architektura">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Most Oscar</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/kazenupesu" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
+             <div
+             id="19"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.7370372
+            data-long=16.8773472
+             data-category="architektura">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Most Oscar</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/kazenupesu" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
+             <div
+             id="20"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.7370372
+            data-long=16.8773472
+             data-category="architektura">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Most Oscar</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/kazenupesu" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
+             <div
+             id="21"
+             class="box"
+             onclick="toggle(this)"
+             data-lat=48.7370372
+            data-long=16.8773472
+             data-category="architektura">
+                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                 <h3>Most Oscar</h3><div class="label">0</div>m
+                 <a href="https://mapy.cz/s/kazenupesu" target="_blank">&#129517;</a>
+                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                 <center><i class="arrow"></i></center>
+             </div>
         </div>
     <div id="footer">
         Hover on images for attribution.
