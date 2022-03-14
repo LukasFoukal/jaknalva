@@ -1,12 +1,6 @@
 var lat;
 var long;
 
-// design variables that need to be changed here
-var filterColor = "#222";
-var filterColorActive = "green";
-var locationColor = "#222";
-var locationColorActive = "green";
-
 // default setting that runs on load (currently loads GPS position) and removes all filters (not sure if necessary)
 navigator.geolocation.getCurrentPosition(loadPosition)
 unfilter();
@@ -16,8 +10,6 @@ function loadPosition(position) {
     lat = position.coords.latitude;
     long = position.coords.longitude;
     loadItUp();
-    
-    locationButtonActive("myLocation");
 }
 
 // function for sorting the list
@@ -53,17 +45,11 @@ function loadItUp() {
     }
 }
 
-// function for making the active location button darker
-function locationButtonActive(location) {
-    var locationButtons = document.getElementsByClassName("locationButton");
+// function for replacing the location text with clicked item
+function locationChange(newLocation) {
+    var locationLabel = document.getElementById("locationLabel");
 
-    for (var i = 0; i < locationButtons.length; i++) {
-        if (locationButtons.item(i).id == location) {
-            document.getElementById(locationButtons.item(i).id).style.backgroundColor = locationColorActive;
-        } else {
-            document.getElementById(locationButtons.item(i).id).style.backgroundColor = locationColor;
-        }
-    }   
+    locationLabel.innerHTML = newLocation.innerHTML;
 }
 
 // fuctions for filtering
@@ -79,8 +65,6 @@ function filter(category) {
             content.style.display = "none";
         }
     }
-
-    filterButtonActive(category);
 }
 
 function unfilter() {
@@ -91,21 +75,13 @@ function unfilter() {
 
         content.style.display = "block";
     }
-
-    filterButtonActive("all");
 }
 
-// function for making the active filtrer button darker
-function filterButtonActive(category) {
-    var filterButtons = document.getElementsByClassName("filterButton");
+// function for replacing the filter text with clicked item
+function filterChange(newFilter) {
+    var filterLabel = document.getElementById("filterLabel");
 
-    for (var i = 0; i < filterButtons.length; i++) {
-        if (filterButtons.item(i).id == category) {
-            document.getElementById(filterButtons.item(i).id).style.backgroundColor = filterColorActive;
-        } else {
-            document.getElementById(filterButtons.item(i).id).style.backgroundColor = filterColor;
-        }
-    }   
+    filterLabel.innerHTML = newFilter.innerHTML;
 }
 
 // function for expanding and contracting the descriptions

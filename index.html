@@ -23,43 +23,23 @@
         <div id="sentence">
             Zobrazujeme 
             <div class="dropdown" id="dropdownFilter">
-                <button class="dropbtn">všechno</button>
+                <button class="dropbtn" id="filterLabel">všechno</button>
                 <div class="dropdown-content" id="contentFilter">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#" onclick="unfilter(); filterChange(this)">všechno</a>
+                <a href="#" onclick="filter(this.id); filterChange(this)" id="klasika">klasické místa</a>
+                <a href="#" onclick="filter(this.id); filterChange(this)" id="zeleznice">železniční zajímavosti</a>
                 </div>
             </div>
-            řazeno z 
+            řazené z 
             <div class="dropdown" id="dropdownLocation">
-                <button class="dropbtn">Vaší polohy</button>
+                <button class="dropbtn" id="locationLabel">Vaší polohy</button>
                 <div class="dropdown-content" id="contentLocation">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#" onclick="navigator.geolocation.getCurrentPosition(loadPosition); locationChange(this)">Vaší polohy</a>
+                <a href="#" onclick="lat = 48.7558747; long = 16.8901997; loadItUp(); locationChange(this)">Břeclavi</a>
+                <a href="#" onclick="lat = 48.7411361; long = 16.7557525; loadItUp(); locationChange(this)">Valtic</a>
                 </div>
             </div>
             .
-        </div>
-
-        <div id="locationTable">
-            <button class="locationButton" onclick="navigator.geolocation.getCurrentPosition(loadPosition)" id="myLocation">
-                &#128205; 
-                Vlastní
-            </button>
-            <!-- to add more starting locations, just copy, change the coordinates here and set an appropriate id, nothing to change in js -->
-            <button class="locationButton" onclick="lat = 48.7558747; long = 16.8901997; loadItUp(); locationButtonActive(this.id)" id="Breclav">&#128649; Břeclav</button>
-            <button class="locationButton" onclick="lat = 48.7411361; long = 16.7557525; loadItUp(); locationButtonActive(this.id)" id="Valtice">&#127863; Valtice</button>
-        </div>
-
-        <div id="filterTable">
-            <button class="filterButton" onclick="unfilter()" id="all">&#128506; Vše</button>
-            <!-- to add more filters, just copy, change the id of the filterButton and add that id to the data-category property of desired items -->
-            <button class="filterButton" onclick="filter(this.id)" id="klasika">&#127984; Klasika</button>
-            <button class="filterButton" onclick="filter(this.id)" id="technik">&#127981; Technik</button>
-            <button class="filterButton" onclick="filter(this.id)" id="urban">&#127969; Urban</button>
-            <button class="filterButton" onclick="filter(this.id)" id="koupani">&#127754; Koupání</button>
-            <button class="filterButton" onclick="filter(this.id)" id="zeleznice">&#128642; Železnice</button>
         </div>
 
         <div id="main">            
