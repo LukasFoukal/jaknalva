@@ -182,16 +182,17 @@ body {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    width: 100%;
 }
 
 /* Links inside the dropdown */
-    .dropdown-content a {
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 0.5em;
 }
 
 /* Change color of dropdown links on hover */
@@ -203,6 +204,10 @@ body {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #ddd;}
+
+.dropdown:hover {
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+}
 
 /* pro tablet */
 @media (min-width: 600px) {
@@ -249,6 +254,7 @@ body {
 
     .box:hover {
         background-color: #ddd;
+        box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
     }
 
     #page {
