@@ -49,57 +49,7 @@ body {
     -webkit-transform: rotate(45deg);
     align-self: center;
     margin: 0.5em;
-  }  
-
-#locationTable {
-    display: flex;
-    justify-content: flex-start;
-    justify-self: center;
-    margin: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    flex-wrap: wrap;
-    width: 80%;
-    gap: 0.5em;
-}
-
-.locationButton {
-    font-size: 2em;
-    padding: 0.1em;
-    color: white;
-    border: 0px solid grey;
-    display: flex;
-    align-self: flex-start;
-    width: 100%;
-    border-radius: 0em;
-    background-color: #222;
-    justify-content: left;
-}
-
-#filterTable {
-    display: flex;
-    justify-content: flex-start;
-    justify-self: center;
-    margin: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    flex-wrap: wrap;
-    width: 80%;
-    gap: 0.5em;
-}
-
-.filterButton {
-    font-size: 2em;
-    padding: auto;
-    color: white;
-    border: 0px solid grey;
-    display: flex;
-    align-self: flex-start;
-    width: 100%;
-    border-radius: 0em;
-    background-color: #222;
-    justify-content: left;
-}
+  }
 
 .mapButton {
     background-color: #55aa32;
@@ -223,14 +173,6 @@ body {
 
     }
 
-    .filterButton {
-        width: 49%;
-    }
-
-    .locationButton {
-        width: 49%;
-    }
-
     .dropdown {
         position: relative;
         display: inline-block;
@@ -265,13 +207,5 @@ body {
         width: 1000px;
         margin: auto;
         padding-left: 0%;
-    }
-
-    .filterButton {
-        width: 24%;
-    }
-
-    .locationButton {
-        width: 24%;
     }
 }
