@@ -85,12 +85,12 @@ function filterChange(newFilter) {
 }
 
 // function for expanding and contracting the descriptions
-function toggle(boxId) {
-    if (document.getElementById(boxId).getElementsByClassName("description").item(0).style.display == "none") {
-        document.getElementById(boxId).getElementsByClassName("description").item(0).style.display = "block";
-        document.getElementById(boxId).getElementsByClassName("arrow").item(0).style.transform = "rotate(-135deg)";
+function toggle(box) {
+    if (box.getElementsByClassName("description").item(0).style.display == "none") {
+        box.getElementsByClassName("description").item(0).style.display = "block";
+        box.getElementsByClassName("arrow").item(0).style.transform = "rotate(-135deg)";
     } else {
-        document.getElementById(boxId).getElementsByClassName("description").item(0).style.display = "none";
-        document.getElementById(boxId).getElementsByClassName("arrow").item(0).style.transform = "rotate(45deg)";
+        box.getElementsByClassName("description").item(0).style.display = "none";
+        box.getElementsByClassName("arrow").item(0).style.transform = "rotate(45deg)";
     }
 }
