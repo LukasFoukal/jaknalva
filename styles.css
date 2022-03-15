@@ -124,7 +124,7 @@ body {
 .dropdown {
     position: relative;
     display: block;
-    padding: 0.5em;
+    margin: 0.5em;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -176,7 +176,7 @@ body {
     .dropdown {
         position: relative;
         display: inline-block;
-        padding: 0em;
+        margin: 0em;
     }
 
     span.avoidwrap { 
