@@ -22,8 +22,9 @@
                     <div class="dropdown-content" id="contentFilter">
                     <a href="#" onclick="unfilter(); filterChange(this)">všechno</a>
                     <a href="#" onclick="filter(this.id); filterChange(this)" id="LVA">místa LVA</a>
-                    <a href="#" onclick="filter(this.id); filterChange(this)" id="architektura">architektonické zajímavosti</a>
-                    <a href="#" onclick="filter(this.id); filterChange(this)" id="20.stoleti">místa minulého století</a>
+                    <a href="#" onclick="filter(this.id); filterChange(this)" id="architektura">zajímavá architektura</a>
+                    <a href="#" onclick="filter(this.id); filterChange(this)" id="priroda">přírodní zajímavosti</a>
+                    <a href="#" onclick="filter(this.id); filterChange(this)" id="muzeum">muzea</a>
                     </div>
                 </div>
             </span>
@@ -62,7 +63,7 @@
             onclick="toggle(this)"
             data-lat=48.7587239
             data-long=16.8820247
-            data-category="klasika">
+            data-category="klasika, muzeum">
                 <img src="img/Synagoga_Breclav_Huhulenik_CC_BY_3.jpg" title="Huhulenik CC BY 3.0">
                 <h3>Synagoga Břeclav</h3><div class="label">0</div>m
                 <a href="https://mapy.cz/s/belasojaze" target="_blank">&#129517;</a>
@@ -271,7 +272,7 @@
                 <center><i class="arrow"></i></center>
             </div>
 
-        <!-- krásy minulého století -->
+        <!-- architektura -->
 
             
             <div
@@ -280,7 +281,7 @@
             onclick="toggle(this)"
             data-lat=48.7592358
             data-long=16.8878125
-            data-category="20.stoleti">
+            data-category="architektura">
                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
                 <h3>Vodárenská věž</h3><div class="label">0</div>m
                 <a href="https://mapy.cz/s/gemoketahu" target="_blank">&#129517;</a>
@@ -295,9 +296,9 @@
             onclick="toggle(this)"
             data-lat=48.7558747
             data-long=16.8901997
-            data-category="20.stoleti">
+            data-category="architektura">
                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Budova Gymnásia</h3><div class="label">0</div>m
+                <h3>Budova Gymnázia</h3><div class="label">0</div>m
                 <a href="https://mapy.cz/s/lacomagego" target="_blank">&#129517;</a>
                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
@@ -310,7 +311,7 @@
             onclick="toggle(this)"
             data-lat=48.7595631
             data-long=16.8808328
-            data-category="20.stoleti">
+            data-category="architektura">
                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
                 <h3>Kostel sv. Václava</h3><div class="label">0</div>m
                 <a href="https://mapy.cz/s/mevalumudu" target="_blank">&#129517;</a>
@@ -325,7 +326,7 @@
             onclick="toggle(this)"
             data-lat=48.7644436
             data-long=16.8891325
-            data-category="20.stoleti">
+            data-category="architektura">
                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
                 <h3>Hvězdova vila</h3><div class="label">0</div>m
                 <a href="https://mapy.cz/s/bepapoporu" target="_blank">&#129517;</a>
@@ -340,7 +341,7 @@
             onclick="toggle(this)"
             data-lat=48.7370372
             data-long=16.8773472
-            data-category="20.stoleti">
+            data-category="architektura">
                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
                 <h3>Nádraží Poštorná</h3><div class="label">0</div>m
                 <a href="https://mapy.cz/s/bevocamale" target="_blank">&#129517;</a>
@@ -355,7 +356,7 @@
             onclick="toggle(this)"
             data-lat=48.7941400
             data-long=16.8016453
-            data-category="20.stoleti">
+            data-category="architektura">
                 <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
                 <h3>Nádraží Lednice</h3><div class="label">0</div>m
                 <a href="https://mapy.cz/s/gogezeteva" target="_blank">&#129517;</a>
@@ -363,88 +364,9 @@
                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
                 <center><i class="arrow"></i></center>
             </div>
-
-            <!-- PŘÍRODA -->
             
             <div
             id="22"
-            class="box"
-            onclick="toggle(this)"
-            data-lat=48.7698231
-            data-long=16.7981281
-            data-category="architektura">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Allahovy rybníky</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/guduvokaha" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-            
-            <div
-            id="23"
-            class="box"
-            onclick="toggle(this)"
-            data-lat=48.8066869
-            data-long=16.8077289
-            data-category="architektura">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Lednické rybníky</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/gokodatope" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-
-            <div
-            id="24"
-            class="box"
-            onclick="toggle(this)"
-            data-lat=48.7753342
-            data-long=16.7469881
-            data-category="architektura">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Kamenice u Hlohovce</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/nohanocofe" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-
-            <div
-            id="25"
-            class="box"
-            onclick="toggle(this)"
-            data-lat=48.6165708
-            data-long=16.9402081
-            data-category="architektura">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Soutok Moravy a Dyje</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/bodosugefu" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-            
-            <div
-            id="26"
-            class="box"
-            onclick="toggle(this)"
-            data-lat=48.7650428
-            data-long=16.8692742
-            data-category="architektura">
-                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
-                <h3>Kančí obora</h3><div class="label">0</div>m
-                <a href="https://mapy.cz/s/kabonelunu" target="_blank">&#129517;</a>
-                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
-                <center><i class="arrow"></i></center>
-            </div>
-            
-            <!-- Architektura -->
-            
-            <div
-            id="27"
             class="box"
             onclick="toggle(this)"
             data-lat=48.7370372
@@ -459,7 +381,7 @@
             </div>
 
             <div
-            id="28"
+            id="23"
             class="box"
             onclick="toggle(this)"
             data-lat=48.7958931
@@ -474,7 +396,7 @@
             </div>
 
             <div
-            id="29"
+            id="24"
             class="box"
             onclick="toggle(this)"
             data-lat=48.7573053
@@ -487,8 +409,175 @@
                 <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
                 <center><i class="arrow"></i></center>
             </div>
+            
+            <div
+            id="25"
+            class="box"
+            onclick="toggle(this)"
+            data-lat=48.7509469
+            data-long=16.9085339
+            data-category="architektura">
+                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                <h3>Smuteční síň Břeclav</h3><div class="label">0</div>m
+                <a href="https://mapy.cz/s/povajadeca" target="_blank">&#129517;</a>
+                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <center><i class="arrow"></i></center>
+            </div>
 
+            <!-- PŘÍRODA -->
+            
+            <div
+            id="26"
+            class="box"
+            onclick="toggle(this)"
+            data-lat=48.7698231
+            data-long=16.7981281
+            data-category="priroda">
+                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                <h3>Allahovy rybníky</h3><div class="label">0</div>m
+                <a href="https://mapy.cz/s/guduvokaha" target="_blank">&#129517;</a>
+                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <center><i class="arrow"></i></center>
+            </div>
+            
+            <div
+            id="27"
+            class="box"
+            onclick="toggle(this)"
+            data-lat=48.8066869
+            data-long=16.8077289
+            data-category="priroda">
+                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                <h3>Lednické rybníky</h3><div class="label">0</div>m
+                <a href="https://mapy.cz/s/gokodatope" target="_blank">&#129517;</a>
+                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <center><i class="arrow"></i></center>
+            </div>
+
+            <div
+            id="28"
+            class="box"
+            onclick="toggle(this)"
+            data-lat=48.7753342
+            data-long=16.7469881
+            data-category="priroda">
+                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                <h3>Kamenice u Hlohovce</h3><div class="label">0</div>m
+                <a href="https://mapy.cz/s/nohanocofe" target="_blank">&#129517;</a>
+                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <center><i class="arrow"></i></center>
+            </div>
+
+            <div
+            id="29"
+            class="box"
+            onclick="toggle(this)"
+            data-lat=48.6165708
+            data-long=16.9402081
+            data-category="priroda">
+                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                <h3>Soutok Moravy a Dyje</h3><div class="label">0</div>m
+                <a href="https://mapy.cz/s/bodosugefu" target="_blank">&#129517;</a>
+                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <center><i class="arrow"></i></center>
+            </div>
+            
+            <div
+            id="30"
+            class="box"
+            onclick="toggle(this)"
+            data-lat=48.7650428
+            data-long=16.8692742
+            data-category="priroda">
+                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                <h3>Kančí obora</h3><div class="label">0</div>m
+                <a href="https://mapy.cz/s/kabonelunu" target="_blank">&#129517;</a>
+                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <center><i class="arrow"></i></center>
+            </div>
+            
             <!--MUZEA-->
+            
+            <div
+            id="31"
+            class="box"
+            onclick="toggle(this)"
+            data-lat=48.7595569
+            data-long=16.8866556
+            data-category="muzeum">
+                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                <h3>Městské muzeum Břeclav</h3><div class="label">0</div>m
+                <a href="https://mapy.cz/s/nugajubatu" target="_blank">&#129517;</a>
+                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <center><i class="arrow"></i></center>
+            </div>
+
+            <div
+            id="32"
+            class="box"
+            onclick="toggle(this)"
+            data-lat=48.7411181
+            data-long=16.7567469
+            data-category="muzeum">
+                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                <h3>Národní zemědělské muzeum</h3><div class="label">0</div>m
+                <a href="https://mapy.cz/s/jatazasule" target="_blank">&#129517;</a>
+                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <center><i class="arrow"></i></center>
+            </div>
+
+            <div
+            id="33"
+            class="box"
+            onclick="toggle(this)"
+            data-lat=48.7241142
+            data-long=16.9674383
+            data-category="muzeum">
+                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                <h3>Městské muzeum Lanžhot</h3><div class="label">0</div>m
+                <a href="https://mapy.cz/s/pegujeneco" target="_blank">&#129517;</a>
+                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <center><i class="arrow"></i></center>
+            </div>
+
+            <div
+            id="34"
+            class="box"
+            onclick="toggle(this)"
+            data-lat=48.8003181
+            data-long=16.8046783
+            data-category="muzeum">
+                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                <h3>Muzeum Lednice Dávná</h3><div class="label">0</div>m
+                <a href="https://mapy.cz/s/pogubahede" target="_blank">&#129517;</a>
+                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <center><i class="arrow"></i></center>
+            </div>
+
+            <div
+            id="35"
+            class="box"
+            onclick="toggle(this)"
+            data-lat=48.7277267
+            data-long=16.8952814
+            data-category="muzeum">
+                <img src="img/Appolonuv_chram_Herbert_Frank_CC_BY_2.jpg" title="Herbert Frank CC BY 2.0">
+                <h3>Expozice Velkomoravské Pohansko</h3><div class="label">0</div>m
+                <a href="https://mapy.cz/s/fahuvomoce" target="_blank">&#129517;</a>
+                <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
+                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <center><i class="arrow"></i></center>
+            </div>
 
         </div>
     <div id="footer">
