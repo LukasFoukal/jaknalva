@@ -43,6 +43,8 @@ function loadItUp() {
             }
         }
     }
+
+    distCheck();
 }
 
 // function for replacing the location text with clicked item
@@ -92,5 +94,13 @@ function toggle(box) {
     } else {
         box.getElementsByClassName("description").item(0).style.display = "none";
         box.getElementsByClassName("arrow").item(0).style.transform = "rotate(45deg)";
+    }
+}
+
+function distCheck() {
+    if (document.getElementById("0").dataset.dist > 10000 || document.getElementById("1").dataset.dist == 0) {
+        document.getElementById("distWarning").style.display = "block";
+    } else {
+        document.getElementById("distWarning").style.display = "none";
     }
 }
