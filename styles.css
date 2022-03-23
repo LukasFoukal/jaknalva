@@ -5,6 +5,8 @@
 
 .label {
     display: inline-block;
+    padding: 0.25em;
+    padding-right: 0em;
 }
 
 h1 {
@@ -32,6 +34,7 @@ h3 {
     display: inline-block;
     padding: 0.25em;
     font-size: 1.5em;
+    padding-right: 0em;
 }
 
 body {
@@ -63,14 +66,14 @@ body {
 
 
 .mapButton {
-    background-color: #55aa32;
+    background-color: orange;
     border: none;
     display: inline-block;
     font-size: 1em;
-    padding: auto;
-    margin: auto;
-    border-radius: 0.5em;
-    color: white;
+    padding: 0.25em;
+    margin: 0.25em;
+    border-radius: 0em;
+    color: #f1f1f1;
 }
 
 #main {
@@ -84,6 +87,10 @@ body {
     background-color: #f1f1f1;
     border: 0px solid darkgray;
     width: 100%;
+}
+
+.box:hover a {
+    color: #ddd;
 }
 
 #main div img{
