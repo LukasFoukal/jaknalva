@@ -26,10 +26,11 @@ a {
     color: white;
     padding: 0.25em;
     position: sticky;
-    padding: -webkit-sticky;
+    position: -webkit-sticky;
     top: 0;
     width: 100%;
     z-index: 2;
+    box-sizing: border-box;
 }
 
 h3 {
