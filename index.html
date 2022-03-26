@@ -18,10 +18,10 @@
                 Zobrazujeme 
                 <!-- the id of the filter button is the keyword that needs to be in data-category of the box -->
                 <div class="dropdown" id="dropdownFilter">
-                    <button class="dropbtn" id="filterLabel">všechno <i class="dropdownArrow"></i></button>
+                    <button class="dropbtn" id="filterLabel">všechna místa <i class="dropdownArrow"></i></button>
                     <div class="dropdown-content" id="contentFilter">
-                    <a href="#" onclick="unfilter(); filterChange(this)">všechno</a>
-                    <a href="#" onclick="filter(this.id); filterChange(this)" id="LVA">místa LVA</a>
+                    <a href="#" onclick="unfilter(); filterChange(this)">všechna místa</a>
+                    <a href="#" onclick="filter(this.id); filterChange(this)" id="LVA">salety</a>
                     <a href="#" onclick="filter(this.id); filterChange(this)" id="architektura">zajímavá architektura</a>
                     <a href="#" onclick="filter(this.id); filterChange(this)" id="priroda">přírodní zajímavosti</a>
                     <a href="#" onclick="filter(this.id); filterChange(this)" id="muzeum">muzea</a>
@@ -29,7 +29,7 @@
                 </div>
             </span>
             <span class="avoidwrap">
-                řazené z 
+                Lednicko-valtického areálu řazené z 
                 <!-- even more straight forward, just change the coordinates and inner HTML -->
                 <div class="dropdown" id="dropdownLocation">
                     <button class="dropbtn" id="locationLabel">Vaší polohy <i class="dropdownArrow"></i></button>
@@ -61,7 +61,9 @@
                 <h3>Zámek Břeclav</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/calasegaru" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Renesanční zámek s přístupnou zámeckou věží.</div>
-                <div style="display: none;" class="description"><a href="https://www.muzeumbv.cz/zamecka-vez" target="_blank" class="mapButton">otevírací doba věže</a></div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/B%C5%99eclav_(z%C3%A1mek)" target="_blank" class="infoButton">wikipedie</a>
+                    <a href="https://www.muzeumbv.cz/zamecka-vez" target="_blank" class="infoButton">otevírací doba věže</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             <div
@@ -75,7 +77,9 @@
                 <h3>Synagoga Břeclav</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/belasojaze" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Bývalá synagoga, dnes využívána pro výstavy.</div>
-                <div style="display: none;" class="description"><a href="https://www.muzeumbv.cz/synagoga" target="_blank" class="mapButton">otevírací doba</a></div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/B%C5%99eclav_(z%C3%A1mek)" target="_blank" class="infoButton">wikipedie</a>
+                    <a href="https://www.muzeumbv.cz/synagoga" target="_blank" class="infoButton">otevírací doba</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             <div
@@ -89,7 +93,8 @@
                 <h3>Kostel Navštívení Panny Marie</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/gatuconode" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Novogotický farní chrám typický červenýma cihlama.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Kostel_Nav%C5%A1t%C3%ADven%C3%AD_Panny_Marie_(Po%C5%A1torn%C3%A1)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -106,7 +111,8 @@
                 <h3>Janův hrad (Janohrad)</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/jasobonaje" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Umělá zřícenina hradu zasazená do krajiny lužního lesa.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Jan%C5%AFv_hrad" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             <div
@@ -120,7 +126,8 @@
                 <h3>Lovecký zámeček</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/dakolokura" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Klacisistní zámeček postavený u cesty z Lednice k Janohradu.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Loveck%C3%BD_z%C3%A1me%C4%8Dek_(Lednicko-valtick%C3%BD_are%C3%A1l)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             <div
@@ -134,7 +141,8 @@
                 <h3>Apollonův chrám</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/kazenupesu" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Chrám zasvěcený bohu Apollónu tyčící se nad Mlýnským rybníkem.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Apoll%C3%B3n%C5%AFv_chr%C3%A1m_(Lednicko-valtick%C3%BD_are%C3%A1l)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             <div
@@ -148,7 +156,8 @@
                 <h3>Zámeček Pohansko</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/jumefofubo" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Empírový zámeček nacházející se jihovýchodně od Břeclavi.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Pohansko_(z%C3%A1mek)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             <div
@@ -162,7 +171,8 @@
                 <h3>Zámeček Lány</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/hodogebaga" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Nejjižnější salet Lednicko-valtického areálu.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/L%C3%A1ny_(Lednicko-valtick%C3%BD_are%C3%A1l)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             <div
@@ -176,7 +186,8 @@
                 <h3>Hraniční zámeček</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/lukanajene" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Zámeček, kterým byla v minulosti vedena hranice mezi Moravou a Dolními Rakousy.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Hrani%C4%8Dn%C3%AD_z%C3%A1mek" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             <div
@@ -190,7 +201,8 @@
                 <h3>Katzelsdorský zámeček</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/josolapaza" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Zaniklá myslivna mezi Valticema a Katzelsdorfem.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Katzelsdorfsk%C3%A1_myslivna" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             <div
@@ -204,7 +216,8 @@
                 <h3>Belveder</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/pusugorole" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Lovecký zámeček ležící u silnice z Lednice do Valtic.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Belveder_(Lednicko-valtick%C3%BD_are%C3%A1l)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             <div
@@ -218,7 +231,9 @@
                 <h3>Zámek Lednice</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/povudojupo" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Zámek s rozlehlou zahradou patřící mezi nejkrásnější komplexy České republiky.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Lednice_(z%C3%A1mek)" target="_blank" class="infoButton">wikipedie</a>
+                    <a href="https://www.zamek-lednice.com/cs" target="_blank" class="infoButton">ceník a návštěvní doba</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             <div
@@ -232,7 +247,9 @@
                 <h3>Zámek Valtice</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/cenosuvuna" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Barokní zámek s jízdárnou a zámeckým divadlem.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Valtice_(z%C3%A1mek)" target="_blank" class="infoButton">wikipedie</a>
+                    <a href="https://www.zamek-valtice.cz/cs" target="_blank" class="infoButton">ceník a návštěvní doba</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             <div
@@ -246,7 +263,8 @@
                 <h3>Chrám Tří grácií</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/guvurekana" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Letohrádek se sousoším a krytým sloupořadím blízko Lednických rybníků.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/T%C5%99i_Gr%C3%A1cie_(Lednicko-valtick%C3%BD_are%C3%A1l)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             <div
@@ -260,7 +278,8 @@
                 <h3>Kolonáda na Reistně</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/lohesonazu" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Romantický klasicistní gloriet s výhledem na Valtice.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Kolon%C3%A1da_na_Rajstn%C4%9B" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -275,7 +294,8 @@
                 <h3>Cihlový most u Sedlece</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/lehejodeno" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Barokní obloukový most na bývalý ostrov Portz.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Cihlov%C3%BD_most_(Mikulov)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -290,7 +310,8 @@
                 <h3>Minaret</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/lamocofono" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Romantická rozhledna vysoká 62 metrů.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Minaret_(Lednicko-valtick%C3%BD_are%C3%A1l)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -308,7 +329,8 @@
                 <h3>Vodárenská věž</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/gemoketahu" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Vodojem s vyhlídkou z třicátých let v centru města Břeclav.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/B%C5%99eclav_(z%C3%A1mek)" target="_blank" class="infoButton">nevím co sem</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             
@@ -323,7 +345,8 @@
                 <h3>Budova Gymnázia</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/lacomagego" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Budova břeclavského gymnázia, které se může pyšnit více jak sto letou tradicí.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/B%C5%99eclav_(z%C3%A1mek)" target="_blank" class="infoButton">nevím co sem</a></div>
                 <center><i class="arrow"></i></center>
             </div> 
             
@@ -338,7 +361,8 @@
                 <h3>Kostel sv. Václava</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/mevalumudu" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Katolický kostel postavený na místě vybombardovaného původního kostela. </div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Kostel_svat%C3%A9ho_V%C3%A1clava_(B%C5%99eclav)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             
@@ -353,7 +377,8 @@
                 <h3>Hvězdova vila</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/bepapoporu" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Honosná secesní vila postavená na počátku 20. století.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://breclav.eu/kultura/cestovni-ruch/hvezdova-vila" target="_blank" class="infoButton">informace</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -368,7 +393,9 @@
                 <h3>Nádraží Poštorná</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/bevocamale" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Historické nádraží na trati Břeclav - Lednice.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://www.pamatkovykatalog.cz/nadrazni-budova-1263995" target="_blank" class="infoButton">informace</a>
+                    <a href="https://www.cd.cz/jizdni-rad/tratove-jizdni-rady/files/cz-k253-211212-01.pdf" target="_blank" class="infoButton">jízdní řád</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -383,7 +410,9 @@
                 <h3>Nádraží Lednice</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/gogezeteva" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Konečná stanice na trati Břeclav - Lednice.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://www.pamatkovykatalog.cz/zeleznicni-stanice-13477257" target="_blank" class="infoButton">informace</a>
+                    <a href="https://www.cd.cz/jizdni-rad/tratove-jizdni-rady/files/cz-k253-211212-01.pdf" target="_blank" class="infoButton">jízdní řád</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             
@@ -398,7 +427,8 @@
                 <h3>Most Oscar</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/kazenupesu" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Železniční most na trati</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://www.mostoskar.cz/" target="_blank" class="infoButton">web</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -413,7 +443,8 @@
                 <h3>Most u cukrovaru</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/juhupovere" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Bývalý železniční most dnes využívaný cyklisty a chodci.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/B%C5%99eclav_(z%C3%A1mek)" target="_blank" class="infoButton">nevím co sem</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -428,7 +459,8 @@
                 <h3>Lázně Lednice</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/cokucapaco" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Lázně s přírodní jodobromovou minerální vodou.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://www.lednicelazne.cz/" target="_blank" class="infoButton">web</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -443,7 +475,8 @@
                 <h3>Kulturní dům Břeclav</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/mogavohuzo" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Čtyřpatrová brutalistní stavba s dvěma sály.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/B%C5%99eclav_(z%C3%A1mek)" target="_blank" class="infoButton">nevím co sem</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             
@@ -458,7 +491,8 @@
                 <h3>Smuteční síň Břeclav</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/povajadeca" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/B%C5%99eclav_(z%C3%A1mek)" target="_blank" class="infoButton">nevím co sem</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -475,7 +509,8 @@
                 <h3>Allahovy rybníky</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/guduvokaha" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Kaskáda pěti menších rybníků ústící do Lednických rybníků.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Allahovy_rybn%C3%ADky" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             
@@ -490,7 +525,8 @@
                 <h3>Lednické rybníky</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/gokodatope" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Rybniční soustava s největším rybníkem na Moravě.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Lednick%C3%A9_rybn%C3%ADky" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -505,7 +541,8 @@
                 <h3>Kamenice u Hlohovce</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/nohanocofe" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Přírodní rezervace na místě bývalého kamenolomu.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Kamenice_u_Hlohovce" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -520,7 +557,8 @@
                 <h3>Soutok Moravy a Dyje</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/bodosugefu" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Trojmezí Rakouska, Slovenska a Česka.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://soutok.nature.cz/" target="_blank" class="infoButton">web</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             
@@ -535,7 +573,8 @@
                 <h3>Kančí obora</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/kabonelunu" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Komplex unikátních lužních lesů. </div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/Kan%C4%8D%C3%AD_obora" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -550,7 +589,8 @@
                 <h3>Ornitologická pozorovatelna Lednické rybníky</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/mudamukoma" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Rozhledna na břehu Prostředního rybníka.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://rozhledny.webzdarma.cz/pastvisko.htm" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -565,7 +605,8 @@
                 <h3>Studánkový vrch</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/badamulabo" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Lorem ipsum dolor sit amet, consectetur adipisici elit</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/B%C5%99eclav_(z%C3%A1mek)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
             
@@ -582,7 +623,8 @@
                 <h3>Městské muzeum Břeclav</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/nugajubatu" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">V prostorech muzea můžete navštívit dlouhodobé i krátkodobé tématické výstavy.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/B%C5%99eclav_(z%C3%A1mek)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -597,7 +639,8 @@
                 <h3>Národní zemědělské muzeum</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/jatazasule" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Expozice o vývoji zelinářství, ovocnářství, vinařství i vinohradnictví.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/B%C5%99eclav_(z%C3%A1mek)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -612,7 +655,8 @@
                 <h3>Městské muzeum Lanžhot</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/pegujeneco" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Expozice zaměřená na folklór a historii.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/B%C5%99eclav_(z%C3%A1mek)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -627,7 +671,8 @@
                 <h3>Muzeum hraček Lednice</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/hupukutefo" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Soukromá sbírka historických hraček.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/B%C5%99eclav_(z%C3%A1mek)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
@@ -642,7 +687,8 @@
                 <h3>Expozice Velkomoravské Pohansko</h3><br><div class="label">0</div> m
                 <a href="https://mapy.cz/s/fahuvomoce" target="_blank" class="mapButton">zobrazit na mapě</a>
                 <div class="oneliner">Muzeum zaměřené na historii Velké Moravy.</div>
-                <div style="display: none;" class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, porro quaerat earum animi quam, eum nisi sint tempore, exercitationem dignissimos doloremque eius architecto quas aliquid sapiente ut dolore et magnam?</div>
+                <div style="display: none;" class="description">
+                    <a href="https://cs.wikipedia.org/wiki/B%C5%99eclav_(z%C3%A1mek)" target="_blank" class="infoButton">wikipedie</a></div>
                 <center><i class="arrow"></i></center>
             </div>
 
