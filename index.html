@@ -15,35 +15,31 @@
     </div>
     <div id="page">
         <div id="sentence">
-            <span class="avoidwrap">
-                Zobrazujeme 
-                <!-- the id of the filter button is the keyword that needs to be in data-category of the box -->
-                <div class="dropdown" id="dropdownFilter">
-                    <button class="dropbtn" id="filterLabel">všechna místa <i class="dropdownArrow"></i></button>
-                    <div class="dropdown-content" id="contentFilter">
-                    <a href="#" onclick="unfilter(); filterChange(this)">všechna místa</a>
-                    <a href="#" onclick="filter(this.id); filterChange(this)" id="LVA">salety</a>
-                    <a href="#" onclick="filter(this.id); filterChange(this)" id="architektura">zajímavá architektura</a>
-                    <a href="#" onclick="filter(this.id); filterChange(this)" id="priroda">přírodní zajímavosti</a>
-                    <a href="#" onclick="filter(this.id); filterChange(this)" id="muzeum">muzea</a>
-                    </div>
+            Zobrazujeme 
+            <!-- the id of the filter button is the keyword that needs to be in data-category of the box -->
+            <div class="dropdown" id="dropdownFilter">
+                <button class="dropbtn" id="filterLabel">všechna místa<i class="dropdownArrow"></i></button>
+                <div class="dropdown-content" id="contentFilter">
+                <a href="#" onclick="unfilter(); filterChange(this); verbChange('řazená')">všechna místa</a>
+                <a href="#" onclick="filter(this.id); filterChange(this); verbChange('řazené')" id="LVA">salety</a>
+                <a href="#" onclick="filter(this.id); filterChange(this); verbChange('řazenou')" id="architektura">zajímavou architekturu</a>
+                <a href="#" onclick="filter(this.id); filterChange(this); verbChange('řazené')" id="priroda">přírodní zajímavosti</a>
+                <a href="#" onclick="filter(this.id); filterChange(this); verbChange('řazená')" id="muzeum">muzea</a>
                 </div>
-            </span>
-            <span class="avoidwrap">
-                Lednicko-valtického areálu řazené dle vzdálenosti z 
-                <!-- even more straight forward, just change the coordinates and inner HTML -->
-                <div class="dropdown" id="dropdownLocation">
-                    <button class="dropbtn" id="locationLabel">Vaší polohy <i class="dropdownArrow"></i></button>
-                    <div class="dropdown-content" id="contentLocation">
-                    <a href="#" onclick="navigator.geolocation.getCurrentPosition(loadPosition); locationChange(this)">Vaší polohy</a>
-                    <a href="#" onclick="lat = 48.7595631; long = 16.8808328; loadItUp(); locationChange(this)">Břeclavi</a>
-                    <a href="#" onclick="lat = 48.8002614; long = 16.8042308; loadItUp(); locationChange(this)">Lednice</a>
-                    <a href="#" onclick="lat = 48.7411361; long = 16.7557525; loadItUp(); locationChange(this)">Valtic</a>
-                    <a href="#" onclick="lat = 48.7747003; long = 16.7643853; loadItUp(); locationChange(this)">Hlohovce</a>
-                    <a href="#" onclick="lat = 48.8068228; long = 16.6385878; loadItUp(); locationChange(this)">Mikulova</a>
-                    </div>
+            </div>
+            Lednicko-valtického areálu <div id="verb">řazená</div> dle vzdálenosti z 
+            <!-- even more straight forward, just change the coordinates and inner HTML -->
+            <div class="dropdown" id="dropdownLocation">
+                <button class="dropbtn" id="locationLabel">Vaší polohy<i class="dropdownArrow"></i></button>
+                <div class="dropdown-content" id="contentLocation">
+                <a href="#" onclick="navigator.geolocation.getCurrentPosition(loadPosition); locationChange(this)">Vaší polohy</a>
+                <a href="#" onclick="lat = 48.7595631; long = 16.8808328; loadItUp(); locationChange(this)">Břeclavi</a>
+                <a href="#" onclick="lat = 48.8002614; long = 16.8042308; loadItUp(); locationChange(this)">Lednice</a>
+                <a href="#" onclick="lat = 48.7411361; long = 16.7557525; loadItUp(); locationChange(this)">Valtic</a>
+                <a href="#" onclick="lat = 48.7747003; long = 16.7643853; loadItUp(); locationChange(this)">Hlohovce</a>
+                <a href="#" onclick="lat = 48.8068228; long = 16.6385878; loadItUp(); locationChange(this)">Mikulova</a>
                 </div>
-            </span>
+            </div>
         </div>
 
         <div id="distWarning">

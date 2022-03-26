@@ -151,6 +151,10 @@ body {
     box-sizing: border-box;
 }
 
+#verb {
+    display: inline;
+}
+
 /* Dropdown Button */
 .dropbtn {
     background-color: #f1f1f1;

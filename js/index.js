@@ -104,3 +104,7 @@ function distCheck() {
         document.getElementById("distWarning").style.display = "none";
     }
 }
+
+function verbChange(newVerb) {
+    document.getElementById("verb").innerHTML = newVerb;
+}
