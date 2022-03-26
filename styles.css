@@ -75,8 +75,8 @@ body {
     display: inline-block;
     font-size: 1em;
     padding: 0.25em;
-    padding-top: 0em;
     margin: 0.25em;
+    margin-top: 0em;
     border-radius: 0em;
     color: #f1f1f1;
 }
@@ -87,8 +87,7 @@ body {
     display: table;
     font-size: 1em;
     padding: 0.25em;
-    padding-top: 0em;
-    margin-top: 0.25em;
+    margin: 0.25em;
     border-radius: 0em;
     color: #f1f1f1;
 }
@@ -99,15 +98,10 @@ body {
     margin: auto;
 }
 
-
 .box {
     background-color: #f1f1f1;
     border: 0px solid darkgray;
     width: 100%;
-}
-
-.box:hover a {
-    color: #ddd;
 }
 
 #main div img{
