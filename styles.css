@@ -205,9 +205,9 @@ body {
         flex-wrap: wrap;    
         row-gap: 1em;
     }
+
     .box {
         width: 49%;
-
     }
 
     .dropdown {
@@ -230,7 +230,8 @@ body {
 @media (min-width: 1000px) {
     #main {
         row-gap: 20px;
-    }    
+    }
+
     .box {
         width: 32%;
     }
