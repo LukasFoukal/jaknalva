@@ -86,17 +86,6 @@ function filterChange(newFilter) {
     filterLabel.innerHTML = newFilter.innerHTML + " <i class=\"dropdownArrow\"></i>";
 }
 
-// function for expanding and contracting the descriptions
-function toggle(box) {
-    if (box.getElementsByClassName("description").item(0).style.display == "none") {
-        box.getElementsByClassName("description").item(0).style.display = "block";
-        box.getElementsByClassName("arrow").item(0).style.transform = "rotate(-135deg)";
-    } else {
-        box.getElementsByClassName("description").item(0).style.display = "none";
-        box.getElementsByClassName("arrow").item(0).style.transform = "rotate(45deg)";
-    }
-}
-
 function distCheck() {
     if (document.getElementById("0").dataset.dist > 10000 || document.getElementById("1").dataset.dist == 0) {
         document.getElementById("distWarning").style.display = "block";

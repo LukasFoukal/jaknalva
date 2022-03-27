@@ -37,8 +37,6 @@ h3 {
     display: inline-block;
     padding: 0.25em;
     font-size: 1.5em;
-    padding-right: 0em;
-    padding-bottom: 0em;
 }
 
 body {
@@ -84,7 +82,7 @@ body {
 .infoButton {
     background-color: orange;
     border: none;
-    display: table;
+    display: inline-block;
     font-size: 1em;
     padding: 0.25em;
     margin: 0.25em;
