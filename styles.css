@@ -184,6 +184,9 @@ body {
 #dropdownLocation:hover #contentLocation {display: block;}
 #dropdownFilter:hover #contentFilter {display: block;}
 
+#main:active #contentLocation {display: none;}
+#main:active #contentFilter {display: none;}
+
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: #ddd;
