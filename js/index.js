@@ -51,7 +51,7 @@ function loadItUp() {
 function locationChange(newLocation) {
     var locationLabel = document.getElementById("locationLabel");
 
-    locationLabel.innerHTML = newLocation.innerHTML + " <i class=\"dropdownArrow\"></i>";
+    locationLabel.innerHTML = newLocation.innerHTML + "<i class=\"dropdownArrow\"></i>";
 }
 
 // fuctions for filtering
@@ -83,7 +83,7 @@ function unfilter() {
 function filterChange(newFilter) {
     var filterLabel = document.getElementById("filterLabel");
 
-    filterLabel.innerHTML = newFilter.innerHTML + " <i class=\"dropdownArrow\"></i>";
+    filterLabel.innerHTML = newFilter.innerHTML + "<i class=\"dropdownArrow\"></i>";
 }
 
 function distCheck() {
