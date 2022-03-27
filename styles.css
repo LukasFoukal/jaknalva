@@ -184,8 +184,9 @@ body {
 #dropdownLocation:hover #contentLocation {display: block;}
 #dropdownFilter:hover #contentFilter {display: block;}
 
-/* closing on mobile */
-body:not(.sentence):active #contentLocation, #contentFilter {display: none;}
+/* Closing on mobile */
+#page:active #contentLocation {display: none;}
+#page:active #contentFilter {display: none;}
 /*#main:active #contentLocation, #contentFilter {display: none;}*/
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
