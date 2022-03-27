@@ -45,17 +45,6 @@ body {
     color: black;
 }
 
-.arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    align-self: center;
-    margin: 0.5em;
-  }
-
 .dropdownArrow {
     border: solid orange;
     border-width: 0 5px 5px 0;
