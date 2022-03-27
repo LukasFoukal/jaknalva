@@ -190,7 +190,7 @@ body {
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
 }
 
-/* pro tablet */
+/* FOR TABLET */
 @media (min-width: 600px) {
     #main {
         display: flex;
@@ -221,7 +221,7 @@ body {
     }
 }
 
-/* pro počítač */ 
+/* FOR DESKTOP */ 
 @media (min-width: 1000px) {
     #main {
         row-gap: 20px;
