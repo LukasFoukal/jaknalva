@@ -89,6 +89,7 @@ body {
     background-color: #f1f1f1;
     border: 0px solid darkgray;
     width: 100%;
+    margin-bottom: 2em;
 }
 
 #main div img{
@@ -208,6 +209,7 @@ body {
 
     .box {
         width: 49%;
+        margin-bottom:0em;
     }
 
     .dropdown {
