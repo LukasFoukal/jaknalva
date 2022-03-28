@@ -21,11 +21,11 @@
             <div class="dropdown" id="dropdownFilter">
                 <button class="dropbtn" id="filterLabel">všechna místa<i class="dropdownArrow"></i></button>
                 <div class="dropdown-content" id="contentFilter">
-                <a href="#" onclick="unfilter(); filterChange(this); verbChange('řazená')">všechna místa</a>
-                <a href="#" onclick="filter(this.id); filterChange(this); verbChange('řazené')" id="LVA">ikony</a>
-                <a href="#" onclick="filter(this.id); filterChange(this); verbChange('řazenou')" id="architektura">zajímavou architekturu</a>
-                <a href="#" onclick="filter(this.id); filterChange(this); verbChange('řazené')" id="priroda">přírodní zajímavosti</a>
-                <a href="#" onclick="filter(this.id); filterChange(this); verbChange('řazená')" id="muzeum">muzea</a>
+                <a href="#" onclick="unfilter(); filterChange(this); adjectiveChange('řazená')">všechna místa</a>
+                <a href="#" onclick="filter(this.id); filterChange(this); adjectiveChange('řazené')" id="LVA">ikony</a>
+                <a href="#" onclick="filter(this.id); filterChange(this); adjectiveChange('řazenou')" id="architektura">zajímavou architekturu</a>
+                <a href="#" onclick="filter(this.id); filterChange(this); adjectiveChange('řazené')" id="priroda">přírodní zajímavosti</a>
+                <a href="#" onclick="filter(this.id); filterChange(this); adjectiveChange('řazená')" id="muzeum">muzea</a>
                 </div>
             </div>
             Lednicko-valtického areálu <div id="verb">řazená</div> dle vzdálenosti z 
@@ -34,11 +34,11 @@
                 <button class="dropbtn" id="locationLabel">vaší polohy<i class="dropdownArrow"></i></button>
                 <div class="dropdown-content" id="contentLocation">
                 <a href="#" onclick="navigator.geolocation.getCurrentPosition(loadPosition); locationChange(this)">vaší polohy</a>
-                <a href="#" onclick="lat = 48.7595631; long = 16.8808328; loadItUp(); locationChange(this)">Břeclavi</a>
-                <a href="#" onclick="lat = 48.8002614; long = 16.8042308; loadItUp(); locationChange(this)">Lednice</a>
-                <a href="#" onclick="lat = 48.7411361; long = 16.7557525; loadItUp(); locationChange(this)">Valtic</a>
-                <a href="#" onclick="lat = 48.7747003; long = 16.7643853; loadItUp(); locationChange(this)">Hlohovce</a>
-                <a href="#" onclick="lat = 48.8068228; long = 16.6385878; loadItUp(); locationChange(this)">Mikulova</a>
+                <a href="#" onclick="lat = 48.7595631; long = 16.8808328; sort(); locationChange(this)">Břeclavi</a>
+                <a href="#" onclick="lat = 48.8002614; long = 16.8042308; sort(); locationChange(this)">Lednice</a>
+                <a href="#" onclick="lat = 48.7411361; long = 16.7557525; sort(); locationChange(this)">Valtic</a>
+                <a href="#" onclick="lat = 48.7747003; long = 16.7643853; sort(); locationChange(this)">Hlohovce</a>
+                <a href="#" onclick="lat = 48.8068228; long = 16.6385878; sort(); locationChange(this)">Mikulova</a>
                 </div>
             </div>
         </div>

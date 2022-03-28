@@ -5,15 +5,15 @@ var long;
 navigator.geolocation.getCurrentPosition(loadPosition)
 unfilter();
 
-// functions for changing location
+// functions for loading user location
 function loadPosition(position) {
     lat = position.coords.latitude;
     long = position.coords.longitude;
-    loadItUp();
+    sort();
 }
 
 // function for sorting the list
-function loadItUp() {
+function sort() {
     var elements = document.getElementById("main").childElementCount;
 
     for (let i = 0; i < elements; i++) {
@@ -43,15 +43,7 @@ function loadItUp() {
             }
         }
     }
-
     distCheck();
-}
-
-// function for replacing the location text with clicked item
-function locationChange(newLocation) {
-    var locationLabel = document.getElementById("locationLabel");
-
-    locationLabel.innerHTML = newLocation.innerHTML + "<i class=\"dropdownArrow\"></i>";
 }
 
 // fuctions for filtering
@@ -79,21 +71,28 @@ function unfilter() {
     }
 }
 
-// function for replacing the filter text with clicked item
+// functions for replacing text with current value
 function filterChange(newFilter) {
     var filterLabel = document.getElementById("filterLabel");
 
     filterLabel.innerHTML = newFilter.innerHTML + "<i class=\"dropdownArrow\"></i>";
 }
 
+function locationChange(newLocation) {
+    var locationLabel = document.getElementById("locationLabel");
+
+    locationLabel.innerHTML = newLocation.innerHTML + "<i class=\"dropdownArrow\"></i>";
+}
+
+function adjectiveChange(newAdjective) {
+    document.getElementById("verb").innerHTML = newAdjective;
+}
+
+// function for displaying or hiding the error message
 function distCheck() {
     if (document.getElementById("0").dataset.dist > 10000 || document.getElementById("1").dataset.dist == 0) {
         document.getElementById("distWarning").style.display = "block";
     } else {
         document.getElementById("distWarning").style.display = "none";
     }
-}
-
-function verbChange(newVerb) {
-    document.getElementById("verb").innerHTML = newVerb;
 }
