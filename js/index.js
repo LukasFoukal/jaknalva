@@ -3,7 +3,6 @@ var long;
 
 // default setting that runs on load (currently loads GPS position) and removes all filters (not sure if necessary)
 navigator.geolocation.getCurrentPosition(loadPosition)
-unfilter();
 
 // functions for loading user location
 function loadPosition(position) {
