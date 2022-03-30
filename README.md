@@ -11,7 +11,7 @@ For keeping data about the individual places, like coordinates and categories, w
 
 These are then accessible in js as properties of the box element under `.dataset.lat` for example.
 
-After loading the page, the script asks the API for access to the user location. The browser creates a pop-up window where the user can accept the access. This information is then passed to the `loadPosition()` function, which transfers them to the global `lat` and `long` variables and then it runs the `sort()` function.
+After loading the page, the script asks the API for access to the user location. The browser creates a pop-up window where the user can accept the access. This information is then passed to the `loadPosition()` function, which extracts the coordinates from the position object and passes them to the `sort()` function in the same way all the other start locations do.
 
 The `sort()` function is the main function of the page logic and is run every time the user changes the location, from which the site calculates the distance.
 
