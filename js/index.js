@@ -1,18 +1,13 @@
-var lat;
-var long;
-
 // default setting that runs on load (currently loads GPS position) and removes all filters (not sure if necessary)
 navigator.geolocation.getCurrentPosition(loadPosition)
 
 // functions for loading user location
 function loadPosition(position) {
-    lat = position.coords.latitude;
-    long = position.coords.longitude;
-    sort();
+   sort(position.coords.latitude, position.coords.longitude);
 }
 
 // function for sorting the list
-function sort() {
+function sort(lat, long) {
     var elements = document.getElementById("main").childElementCount;
 
     for (let i = 0; i < elements; i++) {

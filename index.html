@@ -35,11 +35,11 @@
                 <button class="dropbtn" id="locationLabel">vaší polohy<i class="dropdownArrow"></i></button>
                 <div class="dropdown-content" id="contentLocation">
                 <a href="#" onclick="navigator.geolocation.getCurrentPosition(loadPosition); locationChange(this)">vaší polohy</a>
-                <a href="#" onclick="lat = 48.7595631; long = 16.8808328; sort(); locationChange(this)">Břeclavi</a>
-                <a href="#" onclick="lat = 48.8002614; long = 16.8042308; sort(); locationChange(this)">Lednice</a>
-                <a href="#" onclick="lat = 48.7411361; long = 16.7557525; sort(); locationChange(this)">Valtic</a>
-                <a href="#" onclick="lat = 48.7747003; long = 16.7643853; sort(); locationChange(this)">Hlohovce</a>
-                <a href="#" onclick="lat = 48.8068228; long = 16.6385878; sort(); locationChange(this)">Mikulova</a>
+                <a href="#" onclick="sort(48.7595631, 16.8808328); locationChange(this)">Břeclavi</a>
+                <a href="#" onclick="sort(48.8002614, 16.8042308); locationChange(this)">Lednice</a>
+                <a href="#" onclick="sort(48.7411361, 16.7557525); locationChange(this)">Valtic</a>
+                <a href="#" onclick="sort(48.7747003, 16.7643853); locationChange(this)">Hlohovce</a>
+                <a href="#" onclick="sort(48.8068228, 16.6385878); locationChange(this)">Mikulova</a>
                 </div>
             </div>
         </div>
