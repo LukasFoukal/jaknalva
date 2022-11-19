@@ -1,7 +1,7 @@
 # jaknalva
 In the Lednice-valtice area, we find many interesting places, but there wasn't a single place to find the all. It has been our goal to create a site that organizes all the beautiful places of South Moravia and gives users options to find them. The whole sites runs only on html, css and js, with no server-side code. This approach means that the site is easy to host and maintain after our project is over, so that it can help real people, without us having to spend too much money and effort on its maintenance.
 
-The production version is available at [jaknalva.cz](jaknalva.cz).
+The production version is available at [jaknalva.cz](https://jaknalva.cz).
 
 ## Code
 
